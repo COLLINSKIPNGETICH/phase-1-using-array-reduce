@@ -1,3 +1,12 @@
-const batteryBatches = [4, 5, 3, 4, 4, 6, 5];
+// Given array of battery batches
+const batteryBatches = [
+  { batteryAmount: 50 },
+  { batteryAmount: 30 },
+  { batteryAmount: 20 },
+];
 
-// Code your solution here
+// Use reduce to calculate the total number of batteries
+const totalBatteries = batteryBatches.reduce((total, batch) => total + batch.batteryAmount, 0);
+
+// Display the result
+console.log(totalBatteries); 
